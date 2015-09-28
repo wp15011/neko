@@ -59,13 +59,13 @@ nav ul	{
 	margin-right: auto;
 	padding-left: 0;
 	height: 30px;
-	background-color: #5555ff;
-	background: -webkit-linear-gradient(#5555FF 0%,#FFFFFF 100%);
+	background-color: #ffffff;
 }
 
 nav ul li {
 	list-style-type: none;
-	float: left
+	float: left;
+	/*display: inline-block;*/
 }
 
 nav ul li a	{display: block;
@@ -73,8 +73,11 @@ nav ul li a	{display: block;
 	line-height: 30px;
 	text-decoration: none;
 	text-align: center;
-	color: #000000;
+	color: #222222;
 }
+
+nav ul li a:hover {
+	background-color: #7777ed;}
 /*コンテンツ*/
 
 
