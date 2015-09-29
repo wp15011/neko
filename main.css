@@ -60,6 +60,7 @@ section#main img {
 	top: 30px;
 	right: 30px;
 	text-align:right;
+	width: auto;
 }
 
 figure img {
