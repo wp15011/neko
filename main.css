@@ -42,6 +42,12 @@ nav ul li a:hover {
 }
 
 /*コンテンツ*/
+iframe {
+	position:absolute;
+	top: 30px;
+	right: 30px;
+	text-align:right;
+}
 
 /*フッター*/
 footer {
