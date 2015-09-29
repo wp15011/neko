@@ -4,34 +4,67 @@ body {
 }
 
 /*コンテナ*/
+div#container {
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ffffff;
+	position: relative;
+}
 
 /*ヘッダー*/
 h1 {
 	font-size: 20px;
-	margin: 30px 50px 0;
+	margin: 5px 100px 0;
+	padding-top: 30px;
 }
 
 /*メニュー*/
 nav ul {
 margin: 30px 50px;
-
 list-style-type: none;
+}
+
+nav ul li {
+	line-height: 30px;
+}
+
+nav ul li a {
+	display: block;
+	text-decoration: none;
+	width: 100px;
+	text-align: center;
+}
+
+nav ul li a:hover {
+	background-color: #888888;
+	color: #ffffff;
 }
 
 /*コンテンツ*/
 
-
 /*フッター*/
 footer {
-	margin: 430px;
 	text-align: center;
+	color: #888888;
+	margin-top: 300px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	clear: both;
+	border-top: solid 1px #888888;
 }
 
 /*画像の配置*/
-img {
+section#main img {
 	position:absolute;
 	top: 30px;
-	right:30px;
-	width:600px;
+	right: 30px;
 	text-align:right;
+}
+
+figure img {
+	display: block;
+	margin-top: 280px;
+	margin-bottom: 20px;
+	float: left;
 }
