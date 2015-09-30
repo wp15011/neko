@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="boku">
+	<meta name="description" content="沖縄の景色や食やねこたちを紹介">
+	<meta name="keywords" content="沖縄,猫,料理,景色">
+	<title>My Photo</title>
+	<script type="text/javascript" src="intense.min.js"></script>
+	<meta name="viewport" content="width=device-width", initial-scale=1.0>
+
+	<link rel="stylesheet" href="main.css">
+
+	<!-- PC用の設定 -->
+	<link rel="stylesheet" href="pc.css" media="only screen and (min-width:900px)">
+
+	<!-- タブレット用の設定 -->
+	<link rel="stylesheet" href="tablet.css" media="only screen and (min-width:600px) and (max-width:899px)">
+
+	<!-- スマートフォン用の設定 -->
+	<link rel="stylesheet" href="smart.css" media="only screen and (max-width:599px)">
+
+</head>
+<body>
+	
+	<!-- コンテナ -->
+	<div id="container">
+		
+		<!-- ヘッダ－ -->
+		<header id="pageheader">
+			<h1>My Photo</h1>
+			
+			
+			<!-- メニュー -->
+			<nav>
+				<ul>
+					<li><a href="index.html">Top</a></li>
+					<li><a href="kesiki.html">Landscape</a></li>
+					<li><a href="gohan.html">Food</a></li>
+					<li><a href="neko.html">Cat</a></li>
+					<li><a href="map.html">Map</a></li>
+				</ul>
+			</nav>
+			
+		</header>
+		
+		<!-- コンテンツ -->
+		<article>
+		<div class="thumbnails">
+		<div class="fullscreen-image" data-image="images/tukawan/view1-1200.JPG"   data-title="首里城"   data-caption="芸大側から撮った首里城">
+			<img src="images/tukawan/view1-240.JPG" alt="首里城(サムネイル)">
+		</div>
+		<div class="fullscreen-image" data-image="images/tukawan/view2-1200.JPG"  data-title="夕景"     data-caption="与那原の海">
+			<img src="images/tukawan/view2-240.JPG" alt="夕景(サムネイル)">
+		</div>
+		<div class="fullscreen-image" data-image="images/tukawan/view3-1200.JPG" data-title="謎の建造物" data-caption="伊是名島にそびえ立つ">
+			<img src="images/tukawan/view3-240.JPG" alt="謎の建造物(サムネイル)">
+		</div>
+	</div>
+
+		</article>
+
+		<!-- フッター -->
+		<footer>
+			<p>Copyright (C) Boku to Okinawa</p>
+		</footer>
+
+	</div>
+	<script>
+		var elements = document.querySelectorAll( '.fullscreen-image' );
+		Intense( elements );
+	</script>
+
+</body>
+</html>

@@ -3,6 +3,15 @@ body {
 	background-color: #e5e5e5;
 }
 
+/*test*/
+.fullscreen-image {
+	cursor: url("./plus_cursor.png"), pointer;
+	display: inline-block;
+	margin: 0px 5px 5px 0px;
+}
+/*test*/
+
+
 /*コンテナ*/
 div#container {
 	max-width: 900px;
