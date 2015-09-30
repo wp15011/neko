@@ -14,7 +14,7 @@ body {
 
 /*コンテナ*/
 div#container {
-	max-width: 900px;
+	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #ffffff;
@@ -30,8 +30,18 @@ h1 {
 
 /*メニュー*/
 nav ul {
-margin: 30px 50px;
-list-style-type: none;
+	display: flex;
+	display: -moz-flex;
+	display: -o-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	justify-content: center;
+	-moz-justify-content: center;
+	-o-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	/*margin: 30px 50px;*/
+	list-style-type: none;
 }
 
 nav ul li {
@@ -50,7 +60,7 @@ nav ul li a:hover {
 	color: #ffffff;
 }
 
-/*コンテンツ*/
+/*google map*/
 iframe {
 	position:absolute;
 	top: 30px;
@@ -74,29 +84,28 @@ iframe {
 	height: 100%;
 }
 
+/*コンテンツ*/
+article {
+	max-width: 1000px;
+	margin-left: 30px;
+}
+
+img {
+	margin: -6px;
+}
+
+#samne {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
 /*フッター*/
 footer {
 	text-align: center;
 	color: #888888;
-	margin-top: 300px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	clear: both;
+	padding-bottom: 5px;
 	border-top: solid 1px #888888;
 }
 
-/*画像の配置*/
-section#main img {
-	position:absolute;
-	top: 30px;
-	right: 30px;
-	text-align:right;
-	width: auto;
-}
-
-figure img {
-	display: block;
-	margin-top: 280px;
-	margin-bottom: 20px;
-	float: left;
-}

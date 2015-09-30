@@ -14,7 +14,7 @@ body {
 
 /*コンテナ*/
 div#container {
-	max-width: 965px;
+	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #ffffff;
@@ -30,8 +30,17 @@ h1 {
 
 /*メニュー*/
 nav ul {
-	display: -webkit-box;
-	margin: 30px 50px;
+	display: flex;
+	display: -moz-flex;
+	display: -o-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	justify-content: center;
+	-moz-justify-content: center;
+	-o-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	/*margin: 30px 50px;*/
 	list-style-type: none;
 }
 
@@ -51,7 +60,7 @@ nav ul li a:hover {
 	color: #ffffff;
 }
 
-/*コンテンツ*/
+/*google map*/
 iframe {
 	position:absolute;
 	top: 30px;
@@ -75,12 +84,14 @@ iframe {
 	height: 100%;
 }
 
+/*コンテンツ*/
 article {
-	margin-left: 10px;
+	max-width: 1000px;
+	margin-left: 30px;
 }
+
 img {
-	margin: -7px -7px -5px -5px;
-	padding: 0;
+	margin: -7px;
 }
 /*フッター*/
 footer {

@@ -6,6 +6,7 @@
 	<meta name="description" content="沖縄の景色や食やねこたちを紹介">
 	<meta name="keywords" content="沖縄,猫,料理,景色">
 	<title>My Photo</title>
+	<script type="text/javascript" src="intense.min.js"></script>
 	<meta name="viewport" content="width=device-width", initial-scale=1.0>
 
 	<link rel="stylesheet" href="main.css">
@@ -14,10 +15,10 @@
 	<link rel="stylesheet" href="pc.css" media="only screen and (min-width:900px)">
 
 	<!-- タブレット用の設定 -->
-	<link rel="stylesheet" href="tablet.css" media="only screen and (min-width:600px) and (max-width:899px)">
+	<link rel="stylesheet" href="_tablet.css" media="only screen and (min-width:600px) and (max-width:899px)">
 
 	<!-- スマートフォン用の設定 -->
-	<link rel="stylesheet" href="smart.css" media="only screen and (max-width:599px)">
+	<link rel="stylesheet" href="_smart.css" media="only screen and (max-width:599px)">
 
 </head>
 <body>
@@ -45,44 +46,33 @@
 		
 		<!-- コンテンツ -->
 		<article>
-			<section id=main>
-				<img src="images/neko1-500.jpg" alt="拡大" name="dai">
-			</section>
-			<section id=samne>
-				<figure>
-					<a href="javascript:document.dai.src = 'images/neko1-500.jpg'; void(0);">
-					<img src="images/neko1-50.jpg" alt=""></a>
-				</figure>
-				<figure>
-					<a href="javascript:document.dai.src = 'images/neko2-500.jpg'; void(0);">
-					<img src="images/neko2-50.jpg" alt=""></a>
-				</figure>
-				<figure>
-					<a href="javascript:document.dai.src = 'images/neko3-500.jpg'; void(0);">
-					<img src="images/neko3-50.jpg" alt=""></a>
-				</figure>
-				<figure>
-					<a href="javascript:document.dai.src = 'images/neko4-500.jpg'; void(0);">
-					<img src="images/neko4-50.jpg" alt=""></a>
-				</figure>
-				<figure>
-					<a href="javascript:document.dai.src = 'images/neko5-500.jpg'; void(0);">
-					<img src="images/neko5-50.jpg" alt=""></a>
-				</figure>
-				<figure>
-					<a href="javascript:document.dai.src = 'images/neko6-500.jpg'; void(0);">
-					<img src="images/neko6-50.jpg" alt=""></a>
-				</figure>
-				<figure>
-					<a href="javascript:document.dai.src = 'images/neko7-500.jpg'; void(0);">
-					<img src="images/neko7-50.jpg" alt=""></a>
-				</figure>
-				<figure>
-					<a href="javascript:document.dai.src = 'images/neko8-500.jpg'; void(0);">
-					<img src="images/neko8-50.jpg" alt=""></a>
-				</figure>
-				
-			</section>
+			<div class="thumbnails">
+				<div class="fullscreen-image" data-image="images/tukawan/neko1-1200.JPG"   data-title=""   data-caption="">
+					<img src="images/tukawan/neko1-240.JPG" alt="(サムネイル)">
+				</div>
+				<div class="fullscreen-image" data-image="images/tukawan/neko2-1200.JPG"  data-title=""     data-caption="">
+					<img src="images/tukawan/neko2-240.JPG" alt="(サムネイル)">
+				</div>
+				<div class="fullscreen-image" data-image="images/tukawan/neko3-1200.JPG" data-title="" data-caption="">
+					<img src="images/tukawan/neko3-240.JPG" alt="(サムネイル)">
+				</div>
+				<div class="fullscreen-image" data-image="images/tukawan/neko4-1200.JPG"   data-title=""   data-caption="">
+					<img src="images/tukawan/neko4-240.JPG" alt="(サムネイル)">
+				</div>
+				<div class="fullscreen-image" data-image="images/tukawan/neko5-1200.JPG"  data-title=""     data-caption="">
+					<img src="images/tukawan/neko5-240.JPG" alt="(サムネイル)">
+				</div>
+				<div class="fullscreen-image" data-image="images/tukawan/neko6-1200.JPG" data-title="" data-caption="">
+					<img src="images/tukawan/neko6-240.JPG" alt="(サムネイル)">
+				</div>
+				<div class="fullscreen-image" data-image="images/tukawan/neko7-1200.JPG"   data-title=""   data-caption="">
+					<img src="images/tukawan/neko7-240.JPG" alt="(サムネイル)">
+				</div>
+				<div class="fullscreen-image" data-image="images/tukawan/neko8-1200.JPG"  data-title=""     data-caption="">
+					<img src="images/tukawan/neko8-240.JPG" alt="(サムネイル)">
+				</div>
+			</div>
+
 		</article>
 
 		<!-- フッター -->
@@ -91,6 +81,10 @@
 		</footer>
 
 	</div>
-	
+	<script>
+		var elements = document.querySelectorAll( '.fullscreen-image' );
+		Intense( elements );
+	</script>
+
 </body>
 </html>

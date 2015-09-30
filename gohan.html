@@ -6,6 +6,7 @@
 	<meta name="description" content="沖縄の景色や食やねこたちを紹介">
 	<meta name="keywords" content="沖縄,猫,料理,景色">
 	<title>My Photo</title>
+	<script type="text/javascript" src="intense.min.js"></script>
 	<meta name="viewport" content="width=device-width", initial-scale=1.0>
 
 	<link rel="stylesheet" href="main.css">
@@ -14,10 +15,10 @@
 	<link rel="stylesheet" href="pc.css" media="only screen and (min-width:900px)">
 
 	<!-- タブレット用の設定 -->
-	<link rel="stylesheet" href="tablet.css" media="only screen and (min-width:600px) and (max-width:899px)">
+	<link rel="stylesheet" href="_tablet.css" media="only screen and (min-width:600px) and (max-width:899px)">
 
 	<!-- スマートフォン用の設定 -->
-	<link rel="stylesheet" href="smart.css" media="only screen and (max-width:599px)">
+	<link rel="stylesheet" href="_smart.css" media="only screen and (max-width:599px)">
 
 </head>
 <body>
@@ -45,51 +46,39 @@
 		
 		<!-- コンテンツ -->
 		<article>
-			<section id=main>
-				<img src="images/food1-500.jpg" alt="拡大" name="dai">
-			</section>
-			<section id=samne>
-				<figure>
-					<a href="javascript:document.dai.src = 'images/food1-500.jpg'; void(0);">
-					<img src="images/food1-50.jpg" alt=""></a>
-				</figure>
-				<figure>
-					<a href="javascript:document.dai.src = 'images/food2-500.jpg'; void(0);">
-					<img src="images/food2-50.jpg" alt=""></a>
-				</figure>
-				<figure>
-					<a href="javascript:document.dai.src = 'images/food3-500.jpg'; void(0);">
-					<img src="images/food3-50.jpg" alt=""></a>
-				</figure>
-				<figure>
-					<a href="javascript:document.dai.src = 'images/food4-500.jpg'; void(0);">
-					<img src="images/food4-50.jpg" alt=""></a>
-				</figure>
-				<figure>
-					<a href="javascript:document.dai.src = 'images/food5-500.jpg'; void(0);">
-					<img src="images/food5-50.jpg" alt=""></a>
-				</figure>
-				<figure>
-					<a href="javascript:document.dai.src = 'images/food6-500.jpg'; void(0);">
-					<img src="images/food6-50.jpg" alt=""></a>
-				</figure>
-				<figure>
-					<a href="javascript:document.dai.src = 'images/food7-500.jpg'; void(0);">
-					<img src="images/food7-50.jpg" alt=""></a>
-				</figure>
-				<figure>
-					<a href="javascript:document.dai.src = 'images/food8-500.jpg'; void(0);">
-					<img src="images/food8-50.jpg" alt=""></a>
-				</figure>
-				<figure>
-					<a href="javascript:document.dai.src = 'images/food9-500.jpg'; void(0);">
-					<img src="images/food9-50.jpg" alt=""></a>
-				</figure>
-				<figure>
-					<a href="javascript:document.dai.src = 'images/food10-500.jpg'; void(0);">
-					<img src="images/food10-50.jpg" alt=""></a>
-				</figure>
-			</section>
+			<div class="thumbnails">
+				<div class="fullscreen-image" data-image="images/tukawan/food1-1200.JPG"   data-title=""   data-caption="">
+					<img src="images/tukawan/food1-240.JPG" alt="(サムネイル)">
+				</div>
+				<div class="fullscreen-image" data-image="images/tukawan/food2-1200.JPG"  data-title=""     data-caption="">
+					<img src="images/tukawan/food2-240.JPG" alt="(サムネイル)">
+				</div>
+				<div class="fullscreen-image" data-image="images/tukawan/food3-1200.JPG" data-title="" data-caption="">
+					<img src="images/tukawan/food3-240.JPG" alt="(サムネイル)">
+				</div>
+				<div class="fullscreen-image" data-image="images/tukawan/food4-1200.JPG"   data-title=""   data-caption="">
+					<img src="images/tukawan/food4-240.JPG" alt="(サムネイル)">
+				</div>
+				<div class="fullscreen-image" data-image="images/tukawan/food5-1200.JPG"  data-title=""     data-caption="">
+					<img src="images/tukawan/food5-240.JPG" alt="(サムネイル)">
+				</div>
+				<div class="fullscreen-image" data-image="images/tukawan/food6-1200.JPG" data-title="" data-caption="">
+					<img src="images/tukawan/food6-240.JPG" alt="(サムネイル)">
+				</div>
+				<div class="fullscreen-image" data-image="images/tukawan/food7-1200.JPG"   data-title=""   data-caption="">
+					<img src="images/tukawan/food7-240.JPG" alt="(サムネイル)">
+				</div>
+				<div class="fullscreen-image" data-image="images/tukawan/food8-1200.JPG"  data-title=""     data-caption="">
+					<img src="images/tukawan/food8-240.JPG" alt="(サムネイル)">
+				</div>
+				<div class="fullscreen-image" data-image="images/tukawan/food9-1200.JPG"   data-title=""   data-caption="">
+					<img src="images/tukawan/food9-240.JPG" alt="(サムネイル)">
+				</div>
+				<div class="fullscreen-image" data-image="images/tukawan/food10-1200.JPG"  data-title=""     data-caption="">
+					<img src="images/tukawan/food10-240.JPG" alt="(サムネイル)">
+				</div>
+			</div>
+
 		</article>
 
 		<!-- フッター -->
@@ -98,6 +87,10 @@
 		</footer>
 
 	</div>
-	
+	<script>
+		var elements = document.querySelectorAll( '.fullscreen-image' );
+		Intense( elements );
+	</script>
+
 </body>
 </html>
