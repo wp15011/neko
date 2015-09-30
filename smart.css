@@ -6,7 +6,7 @@ h1 {
 }
 
 /*メニュー*/
-nav ul {
+/*nav ul {
 margin: 30px 10px;
 list-style-type: none;
 }
@@ -20,7 +20,7 @@ nav ul li a {
 	text-decoration: none;
 	width: 30px;
 	text-align: center;
-}
+}*/
 
 /*フッター*/
 footer {
@@ -34,17 +34,7 @@ footer {
 }
 
 /*画像の配置*/
-section#main img {
-	position:absolute;
-	top: 30px;
-	right: 30px;
-	text-align:right;
-	width: 50%;
-}
-
-figure img {
-	display: block;
-	margin-top: 100px;
-	margin-bottom: 20px;
-	float: left;
+article {
+	max-width: 580px;
+	margin-left: 5px;
 }
