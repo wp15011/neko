@@ -38,3 +38,7 @@ article {
 	max-width: 580px;
 	margin-left: 5px;
 }
+
+img {
+	width: 50%;
+}
