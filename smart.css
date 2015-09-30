@@ -6,21 +6,14 @@ h1 {
 }
 
 /*メニュー*/
-/*nav ul {
-margin: 30px 10px;
-list-style-type: none;
+nav ul {
+	display: flex;
+	display: -moz-flex;
+	display: -o-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	list-style-type: none;
 }
-
-nav ul li {
-	line-height: 30px;
-}
-
-nav ul li a {
-	display: block;
-	text-decoration: none;
-	width: 30px;
-	text-align: center;
-}*/
 
 /*フッター*/
 footer {
@@ -36,9 +29,5 @@ footer {
 /*画像の配置*/
 article {
 	max-width: 580px;
-	margin-left: 5px;
-}
-
-img {
-	width: 50%;
+	margin-left: 20px;
 }
